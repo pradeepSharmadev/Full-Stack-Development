@@ -1,0 +1,92 @@
+This Full stack project is instructed by Pradeep Kumar Sharma
+This project is a simple e-commerce website with user authentication and authorization. It has a user registration system
+A MERN Stack Web Development
+Complete Road Map is like
+1. User Registration
+2. User Login
+3. User Profile
+4. User Order History
+5. Admin Panel
+6. Admin Login
+7. Admin User Management
+8. Admin Product Management
+9. Admin Order Management
+
+Multiple industry grade projects
+Query session and community
+
+Known your curriculum
+**Frontend ( HTML, CSS, JavaScript, React)**
+    What is Web?
+    Markup with HTML & JSX
+    Flexbox, Grid & Responsiveness
+    Bootstrap Layouts & Components
+    Frontend UI Framework - Tailwind CLI
+    Core JavaScript & Object Orientation
+    Async JS - promises, async/await
+    DOM & Events
+    Event Bubbling & Delegation
+    Ajax, Axios & fetch API
+    Functional React Components
+    Props & State Management
+    Dynamic Component Styling
+    Functions as Props
+    Hooks in React : useState, useEffect
+    Material UI
+    Custom Hooks
+    Supplement: Redux & Redux Toolkit
+    Version Control: Git & Github
+
+**Backend (Node.js, MongoDB, SQL)**
+    Databases (SQL & No SQL)
+    Mongo Relationships
+    Dive deep into Mongo
+    Express, Nodejs & npm
+    REST APIs
+    Routing, cookies & session
+    Middlewares deep dive
+    EJS Templating
+    MVC Architecture
+    Client & server side Validations
+    Error Handling & flash-connect
+    Authorization
+    Cloudinary & MapBox with Geocoding
+    Deployment with Render
+    + More Topics like AWS Deployment, socket.io, 
+    unit testing with JEST, webRTC etc. in Project based learning
+
+**Projects **
+    Multiple Minor projects : Simon Says Game, Real-time Weather App (React), Todo List App, Spotify Replica etc.
+    Airbnb (Travel & Listing)
+    Zerodha (Investing & Stock Prices)
+    ChatGPT (OpenAI API integration)
+    Linkedin (Social Media)
+    Github (our own Version Control)
+    Zoom (Live Video Conferencing)
+Project 1: E-commerce Website
+Project 2: Blog Website
+Project 3: Chat Application
+Project 4: Weather App
+Project 5: Quiz App
+Project 6: To-Do List App
+Project 7: Personal Portfolio Website
+Project 8: Social Media Website
+Project 9: Online Shopping Cart
+Project 10: Real-time Chat Application
+
+
+**Database (SQL, MongoDB, Graph)**
+SQL Basics
+SQL Querying
+SQL Joins
+SQL Subqueries
+SQL Indexing
+SQL Views
+SQL Stored Procedures
+SQL Triggers
+MongoDB Basics
+MongoDB Querying
+MongoDB Indexing
+MongoDB Aggregation
+Graph Database Basics
+Graph Database Querying
