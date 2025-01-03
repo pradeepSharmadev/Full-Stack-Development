@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+body {
+  background-color: #f0f0f0;
+  transition: background-color 0.5s ease;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 88px;
+  max-width: 320px;
+  max-height: 460px;
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.314);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s ease;
+  padding: 24px;
+}
+
+.mainContainer h2 {
+  margin-bottom: 14px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form label {
+  margin-bottom: 6px;
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.form input {
+  height: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  margin-bottom: 4px;
+  padding-left: 8px;
+}
+.form input:focus{
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.5)
+}
+.form button {
+  height: 32px;
+  width: 120px;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-left: 55.4%;
+  margin-top: 6px;
+  color: white;
+  background-color: rgb(21, 108, 213);
+  transition: background 0.3s ease;
+  transition: transform 0.3s ease;
+  border: none;
+  background: #4a90e2;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form button:hover {
+  background: #3d8edf;
+  transform: scale(1.05);
+}
+
+.mainContainer h4 {
+  font-size: 18px;
+  text-align: left;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    max-height: 240px;
+    overflow: hidden;
+    scrollbar-width: thin;
+}
+.container:hover{
+  overflow: auto;
+}
+
+.parent{
+    height: 28px;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid rgb(0, 0, 0,0.18);
+    justify-content: space-between;
+    padding: 4px;
+    margin-bottom: 6px;
+    align-items: center;
+}
+
+.parent .title{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.parent button{
+    height: 22px;
+    font-size: 13px;
+    width: 72px;
+    border-radius: 2px;
+    margin-bottom: 4px;
+    border: none;
+    background-color: rgb(255, 197, 90);
+}
+.parent button:hover{
+    background-color: rgb(254, 186, 59);
+}
+
+.totalAmount{
+    font-size: medium;
+    font-weight: 600;
+    margin-top: 16px;
+    text-align: center;
+}
+.totalAmount span{
+    font-size: 18px;
+    color: rgb(23, 23, 23);
+}
