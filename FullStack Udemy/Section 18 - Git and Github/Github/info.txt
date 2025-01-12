@@ -1,0 +1,111 @@
+##Github a Service base platform allowed to store code on cloud also many hosting services
+Github = COLLABORATION + BACKUP + OPEN SOURCE
+
+-Go to official documentation and work around reading documentation is not easy its lots of hings in the github so find what specific information you want.
+link docs.github.com/en/get-started
+
+-Go to official website and sign up for a free account
+
+#Setting up connection which your local machine
+
+SSH is one the way to communicate with direct to your machine cmd email is not good way to communicate
+    -Github platform allow you to save code and commits times on cloud free
+
+Generate New SSH key
+- go to bash git terminal Open bash
+- ssh -key -t ed25519 -c "your-email@example.com"
+
+> Generate public/private ALGORITHM key pair
+> enter file in which to save the key ( window : /c/users/you/.ssh/id_ALGORITHM) 
+id_ALGORITHM ENTER  id_ed25519
+> enter passphrase(empty for now)
+> enter same passphrase
+
+Adding SSH key to the ssh-agent
+cmd or power cell of your computer
+#start ssh-agent in the background
+Get-Service -Name ssh-agent/ set-service -startupType
+Manual Start-Service ssh-agent
+
+#Add your SSH private key to the agent
+ssh-add c:/users/You/.ssh/id_ed25519
+ssh-add -k ~/.ssh/id_ed25519
+
+DONE
+go to github.com
+setting > SSH and GPG keys > New SSH key
+    title 
+    authentication
+    add SSH Key
+
+Now Ready to go Projects
+
+Create New Repo,
+-go to github.com
+-create new repo and Name then
+-choose public or private repo
+or needs and go to create Repo
+
+Create Project folder,
+git init
+git add . 
+git commit -m "write your message for staging changes"
+git remote add origin https://github.com/your-username/your-repo-name.git
+git branch -M main    ---> -M to Re-name the branch
+git push -u origin main  ----> -u means uplift origin then you only need to write git push automatically find the origin main where to push on origin and branch name
+
+
+To clone any existing repo from github
+git clone https://github.com/your-username/your-repo-name.git
+
+setup once to your computer:
+git config --global user.name "enter.username"
+git config --global user.email "sample@gmail.com"
+
+setup SSH key to connect with github, allow you to push code,
+
+Be Updated to latest system instruction form latest Documentation git and github ssh key setup
+
+
+
+##setting up remote repo
+
+git remote -v
+git remote add name <url>
+
+git remote origin <url>
+git remote rename oldname newname
+git remote remove name
+
+
+## make code public or push to cloud
+git push <remote> <branch>
+git push origin main
+git push <remote> localBranch : remoteBranch
+git push origin master:main
+git push -u origin main  --> -u stepup an upstream that allow you to run future command
+git push
+
+
+## when you clone repo you only get the main brach connected,rest of remote branches are not configured
+
+git switch branch-name  ===> connects remote branch to local
+git switch -c branch-name  ===> creates new branch and connects to remote
+
+working | Stage | local | remote Repo |
+
+git pull ---> get info and add it in my work
+git pull origin main ---> get info from remote repo and add it in my work
+git fetch  ---> get info but don't put in my works
+
+git pull = git fetch + git merge
+
+git pull origin main changes will be marge to main
+
+
+Features of Github:
+- Adding collaborator
+- Readme.md --Markdown formatting to document code bases
+- adding Gists
+- code space
+- dev container

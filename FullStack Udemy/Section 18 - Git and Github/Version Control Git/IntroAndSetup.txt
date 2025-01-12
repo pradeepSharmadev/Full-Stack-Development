@@ -1,0 +1,40 @@
+#Git and Github
+
+-Both are different things
+    -git is a software provide features of Version Control of File and folder structure(keep track of file changes)
+    -github is Services platform which provide various Services like hosting and cloud storage to save all data or code to platform like github
+
+-Git/Github ecosystem of software engineries collaborations and features building
+
+-Github is terminal first type tool. Use terminal like Warp or its own Bash
+
+working with terminal commands
+- cd  file/Path,  to move into that folder or file
+- ls,  see all available files and folders of that directory 
+- mkdir fileName,  to create folder directory
+- git -v or git -version, to check latest version of git software installed into you machine
+-git init, initialization of git into working directory
+-git status, to check latest changes whether tracking and staged or not
+-pwd, present working directory
+
+#Terminologies
+-Repository or Repo: It just a folder think which is tracked by git
+-git initialization or git init: mean parent folder is on Tracking of git when file changes its tool for staging(add) and commit save changes with message checkpoints
+-WRITE + ADD + COMMIT, three important steps of checkpoint
+
+##Flow of working
+working directory => git add . or named files staging => git commit -m "message" Repo => git push => github
+
+
+#Set up one Project
+-Open project folder in VS code Terminal or any Terminal
+-git init
+-git add .
+-git add text.txt index.html
+-git status
+-git commit -m "a mark down file is created README.md and two files text.txt and index.html"
+-git commit ===> (Stuck:How to come from this)
+-git log
+-git log --oneline ===> show information some changes or checkpoints
+
+Note: Atomic Commit will helps the software engineries to build best with track of changes

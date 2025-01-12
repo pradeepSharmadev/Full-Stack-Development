@@ -1,0 +1,30 @@
+## Open Source on GitHub
+
+what is this open source? follow the steps and best practices
+
+Steps to follow?
+1. Find a Repository to contribute. 
+    - find your own fit tech stack of Development
+    - find a repository that is open to contributions also familiar with that organization
+    - git hub search use it to find
+    - select one
+2. Read the Contribution Guidelines.
+    - some organization you need to ask first for fixing the issue once gets permission do work on it
+3. Understand the issues and validates
+    - Read descriptions videos and all to Understand issue first
+    - Also validate issue is valid by your own test
+4. Fork and start contribution
+    - copy to your github account (Only one fork one repo)
+    - clone the forked repo to your local machine (always pull main)
+    - create a new branch for your contribution
+    - stander branch name like bug/issuenumber-specifyissue
+5. create relevant branch
+6. Test before creating pull request
+7. Create pull request
+    - create you branch to main PR
+    - create Message and add value.
+    - Fixed #issue_number
+    - Healthy Dissuasion
+8. Linking PR with Issue
+9. wait for the Maintainer to Marge
+10. Repeat

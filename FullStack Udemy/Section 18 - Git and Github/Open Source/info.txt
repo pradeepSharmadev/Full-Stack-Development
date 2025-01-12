@@ -1,0 +1,24 @@
+## Open Source
+
+A Product code base which is publicly allowed to see and make own version of that code base with changes what they want to add remove of manipulates
+
+Software Engineers when have free time and think to contribute to the Software community they contribute there skills to build really standout Products features and all
+
+Open Source is sometime a grate way to open a cheerer path to the Software Engineers community but its not granted to have
+
+Septs one can follow to contribute in positive ways:
+**Contribute to Open Source Projects**: Participate in open source projects by contributing code
+
+1. FInd and go to open source Repo
+2. find the issue in issues tab remember the repo you chosen to contribute is match your tech skills stack, also the issue you look for fixing is approachable also verify it and read the full descriptions of issue and verify it by own.
+3. Fork the repo you want to contribute to them
+git clone url of open-source
+4. Clone the repo to your local machine
+5. Create a new branch for your changes
+6. Make the changes and test it locally
+7. push it to your own code base forked repo
+8. Create a Compare and pull request (PR)
+9. Wait patiently for the maintainer to review and merge your PR
+10. A Healthy communication between you and maintainer may have.
+
+Repeat it, and remember you making positive impact to the Software community.

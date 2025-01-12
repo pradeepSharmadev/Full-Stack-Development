@@ -1,0 +1,123 @@
+#Hosting
+-git config
+
+Open Terminal:
+    -git config --global user.name "Pradeep kumar Sharma"
+    -git config --global user.email "pradeep@gmail.com"
+    -git config --global user.name ====> give you username it okk Status 200
+    -git config --global core.editor "code --wait"
+
+
+.gitignore => A file which define all other files to not tracked by git one of the important file in development, many files like .env which we don't have to make public due to security regions, Many .gitignore generator are there on internet
+
+
+Working of Tracking system or Version control System
+-HEAD --> Master/Main  which mean your changes are tracked by Master or Main brach
+-Every commit dependent on previous commit except first one
+
+#Explore .git when initialization happens in repo
+
+#checking previous commits
+-
+
+#Branches of git
+-git init
+-git branch, all branch lists
+-git branch branch-name-bug112-fixing, create new branch with branch name
+-git checkout branch-name-bug112-fixing, to change branch Head pointing to specified branch name
+-git switch master, same to change branch
+WRITE+STAGE(ADD)+COMMIT(CHECKPOINT)
+
+#Marge Branches
+example; you have two branch one master and other is bug112fixing and have to marge into main or master
+-First come to Master
+-git switch master
+-git marge bug112fixing
+HEAD --> master 
+
+#TWO TYPES OF MARGE 
+    -fast forward marge parent(master) has no changes and commits
+    -not fast forward marge parent(master) is also changes which more then 1 commits
+
+
+#git Tries to resolve conflicts
+- What is Conflicts in git?
+- what the steps to resolve it?
+
+commands to analyze it,
+someone did this,
+- git merge navbar-bug-fix
+- git status
+- git branch -d navbar-bug-fix   --> delete branch
+
+you are at master branch,
+- git marge navbar-bug-fix
+
+# conflict
+inside code editor interface
+<<<<<<<<<<<< HEAD
+code1 which is written on main/master branch line1
+code2 which is written on main/master branch line2
+code3 which is written on main/master branch line3
+==================
+code1 conflict which is written on another branch which is going to marge on main/master
+code2 conflict which is written on another branch which is going to marge on main/master
+>>>>>>>>>>>> navbar-bug-fix
+
+# Conflict Resolution Steps
+1. Open the file in the editor
+2. accept which code you want to continue in main/master branch
+
+
+# Git Diff and Stashing
+- git diff  --> compare two staging(ADD) version of project at any x time and y time difference
+- git diff --staged
+- git log --oneline    ---> log the lists of commit in oneline details
+- git diff commit_id1 commit_id2
+
+Note to read diff
+-----file1     -----> indicate that previous code changes in file removed
++++++file2     -----> indicate changes in file added
+
+
+#Git Stash Analysis
+- create a repo, work stage (add) and commit on main branch
+- switch to another branch and work Note:- conflicting changes do not allow to switch branch, without commit,
+?To do the same without commit move to other branch first Stash
+
+- git stash
+- git branch footer-bug-fix
+- git checkout footer-bug-fix
+- git stash pop  ===>(bring back those changes) stash can be move from on to other branch too.
+- git stash list  ===> display the list of stash
+- git stash apply stash{0}  ===>move to the mentioned stage list (apply them, and keep them in stash)
+- git stash pop --> bring back changes from stash and apply it to current commit
+
+
+# git common commands to look previous commit
+- git checkout <HashCode> 
+- git switch main
+- git checkout HEAD~2   ===> look at 2 commit previous 
+- git restore filename  ===> get back to last commit changes
+
+- git ref log   ===> define 
+
+
+## Git Rebase
+re-write the history
+
+alternative merging method: its not allowed in many companies
+clean up tool (clean up commit) we completely submerse the other to the main no existence in future of that
+
+# Analysis
+-create project
+    - git init
+    - git branch main
+    - git merge main
+    - git branch feature/new-feature
+    - git rebase main
+    - git rebase -continue
+    - git rebase -skip
+    - git rebase -abort
+
+Note: Rebase can't be done when conflicts are in Branches
