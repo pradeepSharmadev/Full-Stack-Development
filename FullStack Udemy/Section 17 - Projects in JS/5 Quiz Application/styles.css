@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd);
+  background-size: 400% 400%;
+  animation: gradientAnimation 8s ease infinite;
+  overflow: hidden;
+  color: #2c2c22;
+  height: 100vh;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.main {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 50%;
+  max-height: 80%;
+  margin: auto;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 64px;
+}
+.main h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.startQuizButtonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 32px;
+  margin-bottom: 18px;
+  display: auto;
+}
+.startQuizButton {
+  width: 150px;
+  height: 48px;
+  border: none;
+  display: auto;
+  border-radius: 4px;
+  font-size: 14px;
+  background: #4a91e2;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+.startQuizButton:hover {
+  background: #357abd;
+  transform: scale(1.04);
+  /* transform: translateY(-2px); */
+}
+
+.hidden {
+  display: none;
+}
+
+.question{
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  gap: 6px;
+}
+.options{
+  width: 80%;
+  font-size: 18px;
+  margin-left: 22px;
+  margin-top: 8px;
+  padding: 6px;
+  border-radius: 4px;
+  padding-left: 8px;
+  background-color: rgb(255, 255, 255,0.5);
+}
+
+.options:hover{
+  background-color: rgb(255, 255, 255,0.8);
+  cursor: pointer;
+}
+
+/* .options:active{
+  background-color: rgba(229, 47, 47, 0.8);
+  cursor: pointer;
+} */
+/* .selectedOption{
+  background-color: rgba(56, 150, 222, 0.8);
+  scale: 1.04;
+  cursor: pointer;
+} */
+
+.scoreContainer h2{
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+}
