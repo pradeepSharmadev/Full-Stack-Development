@@ -1,0 +1,39 @@
+## Introduction to Database
+
+?Database : A peace of computer setup some place and use to store data whether data is object variable sting number boolean or any formate of data which one computer can store(Data warehouse).
+
+?Accessing Data and Perform queriers from any server(peace of computer instruction that serve files and content to the client(Browser,or Computer/Mobile)) with the Help of ORM methods and functionalities to enhance the security. Direct access of database not possible in real life applications thats why ORM(Mongoose, Prisma, Drizzle, etc.)
+
+?Type of Database: Databases Architecture defines how data going to stores in Database,
+- Relational Database (R-DBMS): Database which follows strictly the SQL to store data, examples: MySQL, Postgres etc
+
+- NoSQL Database (N-DBMS): Database which does not follow SQL to store data, definition of storing data variable for individual Collection of object structure, ex MongoDB,
+Note: when we use Mongoose its restricts NoSQL we have to define Schema of data first but one can use NoSQL feature by using Prisma ORM.
+
+- Other like Vector Database, Graph Database etc.
+
+?SQL Database,
+- SQL (Structured Query Language) is a programming language designed for managing and manipulating data stored in relational Table
+- SQL is used to perform various operations on data such as creating, modifying(CURD), and querying database tables
+- First create Database in MySQL > create Table with tables name and structure of table > Add data to table in onc by one, Row , Column, Foreign key to define Relation between two tables.
+
+Note: I am familiar with MySQL while is study in 12th stander Computer Science with Python by Sumita Arrora.
+
+?NoSQL Databases,
+-Not Only Structured Query Language: A programming language which allow users to create database structure which not need to follow strict structure of storing data.
+-MongoDB is one of them and its allow to create cloud Database free with 512MB of storage,
+- create Cluster on Atlas MongoDB online > create Database > collection/ document like User > under document we have data in object key value pairs with unique _id:{idoftheobjectindb}
+
+
+
+## SQL v/s No-SQL Database
+-Use case based method will define which one is the best.
+- SQL is best for use case where data is fixed and structure is known, also in this Architecture Vertically Scaling is allowed. 
+- NoSQL is best for use case where data is dynamic and structure is unknown, and also the Architecture Scaling is Horizontal.
+
+
+
+## Creating Cluster on Atlas MongoDB Platform
+- Go to MongoDB Atlas website and create an account.
+- Create a Project or Cluster on Atlas cloud and deploy it select nearest location,
+- Setup Network access and Database create user and password get Connection sting and connect with MongoDB Compass on your computer also alow Network access with setup of ip address Note: 0.0.0.0/0 for Everyone and Everywhere to Access you Data dont't use this in production.
