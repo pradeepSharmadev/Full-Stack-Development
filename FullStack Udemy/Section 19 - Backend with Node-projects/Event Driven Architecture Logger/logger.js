@@ -20,7 +20,7 @@ const logFile = "./eventlog.txt";
 //create function to log the info and do task here
 const logToFile = (event) => {
     //log this message to file ./eventlog.txt creating message string format 
-    const logMessage = `${new Date().toISOString()} - ${event.message}/n`
+    const logMessage = `${new Date().toISOString()} - ${event.message} \n`
     fs.appendFileSync(logFile,logMessage)
 };
 

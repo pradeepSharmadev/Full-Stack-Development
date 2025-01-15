@@ -1,0 +1,7 @@
+2025-01-15T15:55:38.692Z - Application is started 
+2025-01-15T15:55:38.694Z - Application event current 
+2025-01-15T15:55:43.696Z - Memory usage 12.569% 
+2025-01-15T15:55:48.706Z - Memory usage 12.681% 
+2025-01-15T15:55:53.710Z - Memory usage 13.003% 
+2025-01-15T15:55:58.716Z - Memory usage 12.966% 
+2025-01-15T15:56:03.726Z - Memory usage 12.875% 
