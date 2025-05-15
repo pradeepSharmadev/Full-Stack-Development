@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dynamic TOC Example</title>
+    <style>
+      body {
+        display: flex;
+        font-family: sans-serif;
+        margin: 0;
+      }
+
+      main.content {
+        flex: 1;
+        padding: 2rem;
+        max-width: 700px;
+      }
+
+      .right-sidebar {
+        width: 250px;
+        position: sticky;
+        top: 1rem;
+        height: 100vh;
+        overflow-y: auto;
+        padding: 1rem;
+        background: #f4f4f4;
+        border-left: 1px solid #ccc;
+      }
+
+      .right-sidebar nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .right-sidebar nav li {
+        margin: 0.5rem 0;
+      }
+
+      .right-sidebar nav a {
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+      }
+
+      .right-sidebar nav a.active {
+        font-weight: bold;
+        color: #007acc;
+      }
+
+      h2,
+      h3 {
+        scroll-margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Blog Content -->
+    <main class="content">
+      <h2>Introduction</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+
+      <h2>Maximize Your Learning</h2>
+      <p>Enhance retention with these strategies...</p>
+
+      <h3>Active Recall</h3>
+      <p>This method boosts memory through practice...</p>
+
+      <h3>Spaced Repetition</h3>
+      <p>Interval learning helps long-term memory...</p>
+
+      <h2>Conclusion</h2>
+      <p>Summarize and reflect on key takeaways...</p>
+    </main>
+
+    <!-- TOC Sidebar -->
+    <aside class="right-sidebar">
+      <nav aria-labelledby="on-this-page">
+        <h2 id="on-this-page">On this page</h2>
+        <ul></ul>
+      </nav>
+    </aside>
+
+    <!-- 📜 TOC Generator Script -->
+    <script>
+      const tocList = document.querySelector(".right-sidebar nav ul");
+      const headers = document.querySelectorAll(
+        "main.content h2, main.content h3"
+      );
+
+      headers.forEach((header) => {
+        const id =
+          header.id ||
+          header.textContent
+            .toLowerCase()
+            .replace(/\s+/g, "-")
+            .replace(/[^\w\-]/g, "");
+        header.id = id;
+
+        const li = document.createElement("li");
+        if (header.tagName === "H3") li.style.marginLeft = "1rem";
+
+        li.innerHTML = `<a href="#${id}">${header.textContent}</a>`;
+        tocList.appendChild(li);
+      });
+
+      // Optional: Active section highlight on scroll
+      const links = document.querySelectorAll(".right-sidebar nav a");
+
+      window.addEventListener("scroll", () => {
+        let current = headers[0];
+        const scrollPos = window.scrollY + 120;
+
+        headers.forEach((header) => {
+          if (header.offsetTop <= scrollPos) {
+            current = header;
+          }
+        });
+
+        links.forEach((link) => link.classList.remove("active"));
+        const activeLink = document.querySelector(
+          `.right-sidebar nav a[href="#${current.id}"]`
+        );
+        if (activeLink) activeLink.classList.add("active");
+      });
+    </script>
+  </body>
+</html>
